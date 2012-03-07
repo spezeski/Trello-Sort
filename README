@@ -1,0 +1,3 @@
+Display sorted lists in Trello.
+
+The native ordering of the cards in Trello is not changed, only the display is.  In other words, different users can sort by different criteria, and it won't affect the ordering for any other user.
