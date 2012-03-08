@@ -4,6 +4,3 @@ If you don't see them there, try refreshing.
 
 It only changes the ordering that you see, it doesn't change the actual ordering within Trello.  Any sorting you do will not affect the list for any other user.
 
-
-ISSUES:
-   * Doesn't load if you change boards.  Requires refresh.
