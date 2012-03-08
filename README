@@ -1,3 +1,9 @@
-Display sorted lists in Trello.
+Display sorted lists in Trello.  The sorting options (due date, # of votes, last activity, and card #) are available in the List Actions menu.
 
-The native ordering of the cards in Trello is not changed, only the display is.  In other words, different users can sort by different criteria, and it won't affect the ordering for any other user.
+If you don't see them there, try refreshing.
+
+It only changes the ordering that you see, it doesn't change the actual ordering within Trello.  Any sorting you do will not affect the list for any other user.
+
+
+ISSUES:
+   * Doesn't load if you change boards.  Requires refresh.
