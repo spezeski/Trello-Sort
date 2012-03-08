@@ -1,8 +1,7 @@
 wait();
 function wait() {
-	id=location.href.replace(/.*\//,'')
-	i = Models.Board.get(id);
-	if(!i || !i.isReady || !i.listList.models ) {
+	var i = Models.Board.get(id);
+	if(!i || !i.isReady || !i.listList.models || i.listList.models.length == 0) {
 		//console.log(id);
 		setTimeout(wait, 100);
 	} else {
@@ -11,8 +10,7 @@ function wait() {
 }
 
 function init() {
-	id=location.href.replace(/.*\//,'')
-	i = Models.Board.get(id);
+	var i = Models.Board.get(id);
 	$.each(i.listList.models,function(a,b) {
 		if(!b.view) {
 			//console.log('FAIL 1');
