@@ -1,13 +1,43 @@
-i = Models.Board.all();
-$.each(i[0].listList.models,function(a,b) {
-	$(b.view.el).find('.js-open-list-menu').bind('click',function(){
-		setTimeout(function(){addLink(b.cardList,$(b.view.el).find('.ui-sortable'));}, 100);
+wait();
+function wait() {
+	id=location.href.replace(/.*\//,'')
+	i = Models.Board.get(id);
+	if(!i || !i.isReady || !i.listList.models ) {
+		//console.log(id);
+		setTimeout(wait, 100);
+	} else {
+		init();
+	}
+}
+
+function init() {
+	id=location.href.replace(/.*\//,'')
+	i = Models.Board.get(id);
+	$.each(i.listList.models,function(a,b) {
+		if(!b.view) {
+			//console.log('FAIL 1');
+			setTimeout(init,100)
+			return false;
+		}
+		var menu = $(b.view.el).find('.js-open-list-menu');
+		//console.log(menu);
+		if(menu.length == 0) {
+			//console.log('FAIL 2');
+		}
+		menu.bind('click',function(){
+			setTimeout(function(){addLink(b.cardList,$(b.view.el).find('.ui-sortable'));}, 10);
+		});
 	});
-})
+}
 
 
-function addLink(cardList,sortable) {
+function addLink(cardList,sortable)  {
 	var box =$(document).find('.pop-over .content');
+	if ((box).length == 0) {
+		setTimeout(function(){addLink(cardList,sortable);}, 10);
+		return false;
+		//console.log(box);
+	}
 	
 	$(box).append('<br><div class="header clearfix"><span class="header-title">Sort</span></div>');
 	$(box).append( $('<div></div>')
