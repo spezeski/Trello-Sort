@@ -1,0 +1,12 @@
+<script>
+var url = ""
+function checkForValidUrl(tabId, changeInfo, tab) {
+	url=tab.url;
+	if (tab.url.indexOf('trello.com/board') > -1) {
+		chrome.tabs.executeScript(null, {file:"background.js"});
+	}
+};
+
+// Listen for any changes to the URL of any tab.
+chrome.tabs.onUpdated.addListener(checkForValidUrl);
+</script>
