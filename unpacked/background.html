@@ -1,7 +1,5 @@
 <script>
-var url = ""
 function checkForValidUrl(tabId, changeInfo, tab) {
-	url=tab.url;
 	if (tab.url.indexOf('trello.com/board') > -1) {
 		chrome.tabs.executeScript(null, {file:"background.js"});
 	}
