@@ -1,9 +1,0 @@
-{
-  "name": "Trello Sort",
-  "version": "1.2",
-  "description": "Allows sorting lists in Trello",
-  "background_page": "background.html",
-  "permissions": [
-    "tabs", "http://*/*", "https://*/*"
-  ]
-}
