@@ -3,3 +3,6 @@ Display sorted lists in Trello.  The sorting options (due date, labels, # of vot
 If you don't see them there, try refreshing.
 
 It only changes the ordering that you see, it doesn't change the actual ordering within Trello.  Any sorting you do will not affect the list for any other user.
+
+To see development progress, report bugs, or give feedback, see the development board:
+https://trello.com/board/trello-sort/4fe38348e2bc40b53900774e
