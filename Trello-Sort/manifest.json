@@ -1,6 +1,6 @@
 {
   "name": "Trello Sort",
-  "version": "1.3",
+  "version": "2.1",
   "description": "Allows sorting lists in Trello",
   "background_page": "background.html",
   "update_url": "https://raw.github.com/spezeski/Trello-Sort/master/updates.xml",
