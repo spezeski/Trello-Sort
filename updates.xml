@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<gupdate xmlns='http://www.google.com/update2/response' protocol='2.1'>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='nagahcecgalckkodimckmhdfjdpbhjda'>
-    <updatecheck codebase='https://github.com/spezeski/Trello-Sort/raw/master/Trello-Sort.crx' version='2.0' />
+    <updatecheck codebase='https://github.com/spezeski/Trello-Sort/raw/master/Trello-Sort.crx' version='2.1' />
   </app>
 </gupdate>
